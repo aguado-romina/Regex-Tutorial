@@ -13,7 +13,31 @@ Matching an Email Regex: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 This Regex expression will search for a string that contains a group of at least one lower case letters from a to z, numbers from 0 to 9 and can include these characters \_\.-.
 Followed by the @, and after the @ can contain another group of lower Case Letters from a to z and can contain these \.- characters.
 Followed by a .
-Finally, should contain a groups of lower case letters from a to z with a minumun lenght of 2 and a max of 6
+Finally, should contain a groups of lower case letters from a to z with a minumun lenght of 2 and a max of 6.
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+/…/ Start and End Regex delimiters
+^ Start of a string/line/multiline
+([a-z0-9_\.-]+)
+() Grouping
+[a-z] Lower Case Letters from a to z
+[0-9] Digits from 0 to 9
+\_\.- Can include these characters + One or More
+@ Includes
+
+([\da-z\.-]+)\
+ \d Digit
+[a-z] Lower Case Letters from a to z
+\.- Can include these chacacters + One or More
+
+. Includes the "."
+
+([a-z\.]{2,6})
+[a-z] Lower Case Letters from a to z
+{2,6} Between 2 and 6 like (2,3,4,5 or 6)
+
+$ End of String/line/multiline
 
 ## Table of Contents
 
