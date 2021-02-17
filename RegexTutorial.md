@@ -17,27 +17,29 @@ Finally, should contain a groups of lower case letters from a to z with a minumu
 
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
-/…/ Start and End Regex delimiters
-^ Start of a string/line/multiline
-([a-z0-9_\.-]+)
-() Grouping
-[a-z] Lower Case Letters from a to z
-[0-9] Digits from 0 to 9
-\_\.- Can include these characters + One or More
+`/…/` Start and End Regex delimiters
+`^` Start of a string/line/multiline
+`([a-z0-9_\.-]+)`
+`()` Grouping
+`[a-z]` Lower Case Letters from a to z
+`[0-9]` Digits from 0 to 9
+`\_\.-` Can include these characters
+`+` One or More
+
 @ Includes
 
-([\da-z\.-]+)\
- \d Digit
-[a-z] Lower Case Letters from a to z
-\.- Can include these chacacters + One or More
+`([\da-z\.-]+)\`
+`\d` Digit
+`[a-z]` Lower Case Letters from a to z
+`\.-` Can include these chacacters + One or More
 
 . Includes the "."
 
-([a-z\.]{2,6})
-[a-z] Lower Case Letters from a to z
-{2,6} Between 2 and 6 like (2,3,4,5 or 6)
+`([a-z\.]{2,6})`
+`[a-z]` Lower Case Letters from a to z
+`{2,6}` Between 2 and 6 like (2,3,4,5 or 6)
 
-$ End of String/line/multiline
+`$` End of String/line/multiline
 
 ## Table of Contents
 
@@ -56,18 +58,26 @@ $ End of String/line/multiline
 
 ### Anchors
 
+`/…/` Start and End Regex delimiters
+`^` Start of a string/line/multiline
+`$` End of String/line/multiline
+
 ### Quantifiers
 
-- One or More
-  {2,6} Between 2 and 6 like (2,3,4,5 or 6)
+`+` One or More
+`{2,6}` Between 2 and 6 like (2,3,4,5 or 6)
 
 ### Grouping Constructs
 
-() Grouping
+`()` Grouping
+`[a-z]` Lower Case Letters from a to z
+`[0-9]` Digits from 0 to 9
 
 ### Bracket Expressions
 
 ### Character Classes
+
+`\d` Digit
 
 ### The OR Operator
 
